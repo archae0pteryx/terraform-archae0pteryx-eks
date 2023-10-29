@@ -64,7 +64,7 @@ variable "default_tags" {
 variable "node_instance_types" {
   description = "The instance types for the default node group."
   type        = list(string)
-  default     = ["t3.medium"]
+  default     = ["t3.medium", "t2.medium", "m6a.large"]
 }
 
 variable "node_min_size" {
